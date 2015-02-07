@@ -37,7 +37,7 @@ public class MainActivity extends ActionBarActivity {
 
         game = new OneSecGame();
 
-        String a = "asdjghwhigb";
+
 
         mTvMission = (TextView) findViewById(R.id.tv_mission);
     }
