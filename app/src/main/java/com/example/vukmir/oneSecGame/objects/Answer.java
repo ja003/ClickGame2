@@ -10,19 +10,18 @@ public class Answer {
         this.answer = answer;
     }
 
-    public void setAnswer(int answer){
+    public void setAnswer(int answer) {
         this.answer = answer;
     }
 
-    public int getAnswer(){
+    public int getAnswer() {
         return answer;
     }
 
-    public boolean compareAnswers(Answer ans){
-        if(ans.getAnswer() == answer){
+    public boolean compareAnswers(Answer ans) {
+        if (ans.getAnswer() == answer) {
             return true;
-        }
-        else
+        } else
             return false;
     }
 }
