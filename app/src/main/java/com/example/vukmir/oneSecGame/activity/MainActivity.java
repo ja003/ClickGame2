@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.example.vukmir.oneSecGame.OneSecGame;
 import com.example.vukmir.clickgame.R;
-import com.example.vukmir.oneSecGame.fragment.FirstLevelFragment;
+import com.example.vukmir.oneSecGame.fragment.LevelFragment;
 import com.example.vukmir.oneSecGame.fragment.SecondLevelFragment;
 import com.example.vukmir.oneSecGame.objects.Answer;
 
@@ -37,6 +37,7 @@ public class MainActivity extends ActionBarActivity {
 
         game = new OneSecGame();
 
+        String a = "asdjghwhigb";
 
         mTvMission = (TextView) findViewById(R.id.tv_mission);
     }
@@ -81,7 +82,7 @@ public class MainActivity extends ActionBarActivity {
         Fragment fragment = null;
 
         if (game.LEVEL == 1) {
-            fragment = new FirstLevelFragment();
+            fragment = new LevelFragment();
             game.QUESTIONS_LIST.clear();
             game.QUESTIONS_LIST.add("Click on blue");
             game.QUESTIONS_LIST.add("Click on red");

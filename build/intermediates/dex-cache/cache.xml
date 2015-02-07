@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/Users/martinbarton/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/martinbarton/Downloads/ClickGame/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-926b65d8f06757bde97b9615e46857bebc7172ae.jar" />
-    </item>
-    <item
-        jar="/Users/martinbarton/Downloads/ClickGame/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/martinbarton/Downloads/ClickGame/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-a8ec471dcad26c597a9127710752eaed6bdde7ac.jar" />
-    </item>
-    <item
-        jar="/Users/martinbarton/Downloads/ClickGame/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jar="C:\Users\Vukmir\AndroidStudioProjects\ClickGame2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/martinbarton/Downloads/ClickGame/app/build/intermediates/pre-dexed/debug/classes-cc7a5d60fbe9c35c1ca9ed530fd04158897c2947.jar" />
+        <dex dex="C:\Users\Vukmir\AndroidStudioProjects\ClickGame2\app\build\intermediates\pre-dexed\debug\classes-20c127ddf7f3c9cc9557ecdba4d2c2db0f14237c.jar" />
     </item>
     <item
-        jar="/Users/martinbarton/Downloads/ClickGame/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jar="C:\Users\Vukmir\AndroidStudioProjects\ClickGame2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Vukmir\AndroidStudioProjects\ClickGame2\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-33a839e222cf52ca607701a294c80fa505982ceb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vukmir\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Vukmir\AndroidStudioProjects\ClickGame2\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-e13115d25528378f41da35b067cfcdebeb65facb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Vukmir\AndroidStudioProjects\ClickGame2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/martinbarton/Downloads/ClickGame/app/build/intermediates/pre-dexed/debug/classes-2e9066ddeb8277570f11b8da23def7035745dd48.jar" />
+        <dex dex="C:\Users\Vukmir\AndroidStudioProjects\ClickGame2\app\build\intermediates\pre-dexed\debug\classes-2ca498d5e60281221df6de7821d56f68d2dfc512.jar" />
     </item>
 
 </items>
