@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/container_info"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:onClick="onClickBtnStart"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_mission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click on the ... box"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_level"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
