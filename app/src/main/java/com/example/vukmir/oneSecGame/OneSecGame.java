@@ -16,6 +16,7 @@ public class OneSecGame extends Application {
 
     public static int LEVEL;
     public static int SCORE;
+    public static int CORRECT_ANSWER;
     public static int QUEST_NUMBER;
     public static Answer ANSWER;
     public static List<Answer> CORRECT_ANSWERS_LIST;
@@ -53,19 +54,19 @@ public class OneSecGame extends Application {
     }
 
 
-    public void setCorrectAnswers(List<Answer> answers){
-        if(answers == null){
+    public void setCorrectAnswers(List<Answer> answers) {
+        if (answers == null) {
             throw new NullPointerException();
         }
         CORRECT_ANSWERS_LIST.clear();
         CORRECT_ANSWERS_LIST.addAll(answers);
     }
 
-    public void showViewableOption(int i){
+    public void showViewableOption(int i) {
         VIEWABLE_OPTIONS.get(i).setVisibility(View.VISIBLE);
     }
 
-    public void hideViewableOption(int i){
+    public void hideViewableOption(int i) {
         VIEWABLE_OPTIONS.get(i).setVisibility(View.GONE);
     }
 

@@ -6,25 +6,23 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
-import com.example.vukmir.oneSecGame.OneSecGame;
 import com.example.vukmir.clickgame.R;
+<<<<<<< HEAD
+import com.example.vukmir.oneSecGame.OneSecGame;
+import com.example.vukmir.oneSecGame.fragment.Lvl1;
+=======
 import com.example.vukmir.oneSecGame.fragment.LevelFragment;
 import com.example.vukmir.oneSecGame.fragment.SecondLevelFragment;
 import com.example.vukmir.oneSecGame.objects.Answer;
 
 import java.util.Random;
+>>>>>>> FETCH_HEAD
 
 
 public class MainActivity extends ActionBarActivity {
-    private static String SCORE = "Your score: ";
+    private static String YOUR_SCORE = "Your score: ";
     private Toolbar mToolbar;
-    private TextView mTvMission;
-    private int WIN_SCORE = 3;
-    private int LOSE_SCORE = -1;
-    private RelativeLayout viewableOption01;
-    private OneSecGame game;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +33,14 @@ public class MainActivity extends ActionBarActivity {
 
         setTitle("Welcome in game!");
 
+<<<<<<< HEAD
+=======
         game = new OneSecGame();
 
 
 
         mTvMission = (TextView) findViewById(R.id.tv_mission);
+>>>>>>> FETCH_HEAD
     }
 
 
@@ -48,13 +49,10 @@ public class MainActivity extends ActionBarActivity {
         getSupportActionBar().setTitle(title);
     }
 
-    private void setScore(int score) {
-        game.SCORE = score;
-        setTitle(SCORE + game.SCORE);
-    }
 
-    private void refreshScore() {
-        setTitle(SCORE + game.SCORE);
+    private void setScore(int score) {
+        OneSecGame.SCORE = score;
+        setTitle(YOUR_SCORE + OneSecGame.SCORE);
     }
 
 
@@ -63,6 +61,8 @@ public class MainActivity extends ActionBarActivity {
         setSupportActionBar(mToolbar);
     }
 
+<<<<<<< HEAD
+=======
     public void anotherQuestion(){
         if(game.SCORE > WIN_SCORE*game.LEVEL){
             increaseLevel();
@@ -126,54 +126,15 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
+>>>>>>> FETCH_HEAD
     public void onClickBtnStart(View view) {
         setScore(0);
-        view.setVisibility(View.GONE);
-        mTvMission.setVisibility(View.VISIBLE);
-        increaseLevel();
-        anotherQuestion();
+        ((RelativeLayout) findViewById(R.id.container_info)).setVisibility(View.GONE);
+
+        // start LVL 1
+        Fragment fragment = new Lvl1();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container_level, fragment).commitAllowingStateLoss();
     }
 
 
-
-
-    public void onClickBtn1(View view) {
-        game.ANSWER.setAnswer(1);
-        checkAnswers();
-    }
-
-
-    public void onClickBtn2(View view) {
-        game.ANSWER.setAnswer(2);
-        checkAnswers();
-    }
-
-
-    public void onClickBtn3(View view) {
-        game.ANSWER.setAnswer(3);
-        checkAnswers();
-    }
-
-
-    public void onClickBtn4(View view) {
-        game.ANSWER.setAnswer(4);
-        checkAnswers();
-    }
-
-    public void checkAnswers(){
-        if(game.ANSWER.compareAnswers(game.CORRECT_ANSWERS_LIST.get(game.QUEST_NUMBER))){
-            game.SCORE++;
-            //Toast.makeText(getApplicationContext(),"+",Toast.LENGTH_SHORT).show();
-            refreshScore();
-            //OneSecApplication.VIEWABLE_OPTIONS.get(OneSecApplication.QUEST_NUMBER).setVisibility(View.INVISIBLE);
-            anotherQuestion();
-        }
-        else{
-            game.SCORE--;
-            //Toast.makeText(getApplicationContext(),"-",Toast.LENGTH_SHORT).show();
-            refreshScore();
-            //OneSecApplication.VIEWABLE_OPTIONS.get(OneSecApplication.QUEST_NUMBER).setVisibility(View.INVISIBLE);
-            anotherQuestion();
-        }
-    }
 }
